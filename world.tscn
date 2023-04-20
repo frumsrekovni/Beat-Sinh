@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0n58r2b3mmuv"]
+
+[ext_resource type="PackedScene" uid="uid://bipl3t805e258" path="res://player.tscn" id="1_318wh"]
+[ext_resource type="PackedScene" uid="uid://clmh40wtq5p7a" path="res://projectile.tscn" id="2_umoxu"]
+
+[node name="world" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_318wh")]
+position = Vector2(388, 235)
+
+[node name="Projectile" parent="." instance=ExtResource("2_umoxu")]
+position = Vector2(387, 71)
+
+[node name="Projectile2" parent="." instance=ExtResource("2_umoxu")]
+position = Vector2(348, 47)
+
+[node name="Projectile3" parent="." instance=ExtResource("2_umoxu")]
+position = Vector2(380, 32)
+
+[node name="Projectile4" parent="." instance=ExtResource("2_umoxu")]
+position = Vector2(393, -195)
+
+[node name="Projectile5" parent="." instance=ExtResource("2_umoxu")]
+position = Vector2(246, -159)
+
+[node name="Projectile6" parent="." instance=ExtResource("2_umoxu")]
+position = Vector2(282, -248)
+
+[node name="Projectile7" parent="." instance=ExtResource("2_umoxu")]
+position = Vector2(750, -193)
+
+[node name="Projectile8" parent="." instance=ExtResource("2_umoxu")]
+position = Vector2(711, -217)
+
+[node name="Projectile9" parent="." instance=ExtResource("2_umoxu")]
+position = Vector2(743, -232)
+
+[node name="Projectile10" parent="." instance=ExtResource("2_umoxu")]
+position = Vector2(756, -459)
+
+[node name="Projectile11" parent="." instance=ExtResource("2_umoxu")]
+position = Vector2(609, -423)
+
+[node name="Projectile12" parent="." instance=ExtResource("2_umoxu")]
+position = Vector2(645, -512)
