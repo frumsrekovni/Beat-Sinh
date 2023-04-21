@@ -1,10 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://bipl3t805e258"]
+[gd_scene load_steps=5 format=3 uid="uid://bipl3t805e258"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_vrvf7"]
 [ext_resource type="Texture2D" uid="uid://ckh3hkfor1ade" path="res://player.png" id="2_afkfh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dpxju"]
 size = Vector2(192, 32)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_lmstv"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 0, 0)
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_vrvf7")
@@ -14,3 +20,9 @@ texture = ExtResource("2_afkfh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_dpxju")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+z_index = -1
+process_material = SubResource("ParticleProcessMaterial_lmstv")
+texture = ExtResource("2_afkfh")
+speed_scale = 4.0
